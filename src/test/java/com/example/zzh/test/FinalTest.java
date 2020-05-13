@@ -160,6 +160,7 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
         HttpEntity<Product> entity = new HttpEntity<>(product);
         Result result = restTemplate.postForObject(url, entity, Result.class);
         Assert.assertTrue(result.isSuccess());
+
     }
 
     /**
