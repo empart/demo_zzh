@@ -144,6 +144,8 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
             sku.setGiftIdList(giftIds);
         }
         //不模拟configId的数据了，方式和giftId类似
+
+
         return sku;
     }
 
