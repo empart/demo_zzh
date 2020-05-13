@@ -1,0 +1,344 @@
+2020-03-13 15:51:42.706 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Starting ZzhApplication on zzhMac.local with PID 5376 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-03-13 15:51:42.713 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-03-13 15:51:42.713 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - No active profile set, falling back to default profiles: default 
+2020-03-13 15:51:43.560 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http) 
+2020-03-13 15:51:43.575 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"] 
+2020-03-13 15:51:43.576 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2020-03-13 15:51:43.576 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30] 
+2020-03-13 15:51:43.632 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2020-03-13 15:51:43.632 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 885 ms 
+2020-03-13 15:51:43.730 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 15:51:43.829 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 15:51:44.037 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 15:51:44.233 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"] 
+2020-03-13 15:51:44.255 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path '' 
+2020-03-13 15:51:44.258 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Started ZzhApplication in 1.779 seconds (JVM running for 2.227) 
+2020-03-13 15:52:10.210 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2020-03-13 15:52:10.210 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2020-03-13 15:52:10.214 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms 
+2020-03-13 15:52:10.537 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 15:52:10.554 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 1(Integer) 
+2020-03-13 15:52:10.594 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 15:54:25.465 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Starting ZzhApplication on zzhMac.local with PID 5385 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-03-13 15:54:25.467 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-03-13 15:54:25.467 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - No active profile set, falling back to default profiles: default 
+2020-03-13 15:54:26.081 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http) 
+2020-03-13 15:54:26.086 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"] 
+2020-03-13 15:54:26.087 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2020-03-13 15:54:26.087 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30] 
+2020-03-13 15:54:26.132 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2020-03-13 15:54:26.133 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 640 ms 
+2020-03-13 15:54:26.200 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 15:54:26.250 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 15:54:26.448 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 15:54:26.585 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"] 
+2020-03-13 15:54:26.602 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8787"] 
+2020-03-13 15:54:26.602 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardService - Stopping service [Tomcat] 
+2020-03-13 15:54:26.605 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8787"] 
+2020-03-13 15:54:26.605 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8787"] 
+2020-03-13 15:54:26.606 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2020-03-13 15:54:26.609 ERROR [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8787 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8787 or configure this application to listen on another port.
+ 
+2020-03-13 15:54:26.611 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 15:54:26.611 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 15:54:26.612 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 15:57:18.934 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Starting ZzhApplication on zzhMac.local with PID 5405 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-03-13 15:57:18.936 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-03-13 15:57:18.936 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - No active profile set, falling back to default profiles: default 
+2020-03-13 15:57:19.570 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8989 (http) 
+2020-03-13 15:57:19.575 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8989"] 
+2020-03-13 15:57:19.575 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2020-03-13 15:57:19.576 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30] 
+2020-03-13 15:57:19.620 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2020-03-13 15:57:19.620 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 658 ms 
+2020-03-13 15:57:19.685 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 15:57:19.740 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 15:57:19.963 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 15:57:20.100 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8989"] 
+2020-03-13 15:57:20.121 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8989 (http) with context path '' 
+2020-03-13 15:57:20.124 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Started ZzhApplication in 1.355 seconds (JVM running for 1.774) 
+2020-03-13 15:57:26.848 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 15:57:26.849 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 15:57:26.850 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 15:57:44.598 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 15:57:44.599 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 15:57:44.601 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 15:58:37.713 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Starting ZzhApplication on zzhMac.local with PID 5411 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-03-13 15:58:37.714 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-03-13 15:58:37.714 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - No active profile set, falling back to default profiles: default 
+2020-03-13 15:58:38.379 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http) 
+2020-03-13 15:58:38.385 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"] 
+2020-03-13 15:58:38.385 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2020-03-13 15:58:38.385 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30] 
+2020-03-13 15:58:38.432 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2020-03-13 15:58:38.432 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 691 ms 
+2020-03-13 15:58:38.506 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 15:58:38.566 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 15:58:38.790 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 15:58:38.915 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"] 
+2020-03-13 15:58:38.936 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path '' 
+2020-03-13 15:58:38.938 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Started ZzhApplication in 1.409 seconds (JVM running for 1.836) 
+2020-03-13 16:46:27.696 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2020-03-13 16:46:27.697 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2020-03-13 16:46:27.701 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 4 ms 
+2020-03-13 16:46:27.960 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 16:46:27.978 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 1(Integer) 
+2020-03-13 16:46:27.995 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 16:46:28.065 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-2] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 16:46:28.065 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-2] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 16:46:28.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-2] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 16:53:41.788 WARN  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-4] o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'id' is not present] 
+2020-03-13 16:53:41.825 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 16:53:41.825 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 16:53:41.827 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:11:39.904 WARN  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-7] o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'id' is not present] 
+2020-03-13 17:11:39.923 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-8] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:11:39.923 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-8] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:11:39.925 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-8] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:30:06.231 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 17:30:06.232 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 17:30:06.234 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 17:30:07.441 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Starting ZzhApplication on zzhMac.local with PID 5708 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-03-13 17:30:07.442 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-03-13 17:30:07.443 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - No active profile set, falling back to default profiles: default 
+2020-03-13 17:30:08.095 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http) 
+2020-03-13 17:30:08.100 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"] 
+2020-03-13 17:30:08.101 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2020-03-13 17:30:08.101 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30] 
+2020-03-13 17:30:08.148 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2020-03-13 17:30:08.149 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 680 ms 
+2020-03-13 17:30:08.224 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 17:30:08.283 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 17:30:08.510 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 17:30:08.635 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"] 
+2020-03-13 17:30:08.656 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path '' 
+2020-03-13 17:30:08.658 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Started ZzhApplication in 1.382 seconds (JVM running for 1.795) 
+2020-03-13 17:30:26.071 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2020-03-13 17:30:26.072 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2020-03-13 17:30:26.075 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 3 ms 
+2020-03-13 17:31:48.772 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:31:48.795 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 1(Integer) 
+2020-03-13 17:31:48.808 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:34:07.911 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-7] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:34:07.911 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-7] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 1(Integer) 
+2020-03-13 17:34:07.912 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-7] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:37:19.491 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-9] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:37:19.492 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-9] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:37:19.493 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-9] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:39:53.466 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:39:53.467 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:39:53.468 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:40:09.886 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-3] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:40:09.886 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-3] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:40:09.887 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-3] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:45:32.593 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:45:32.594 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:45:32.595 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:47:59.442 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-7] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:47:59.442 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-7] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:47:59.443 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-7] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:48:38.890 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-9] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:48:38.891 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-9] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:48:38.892 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-9] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:48:38.911 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-10] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:48:38.911 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-10] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:48:38.912 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-10] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:50:39.619 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-2] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:50:39.619 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-2] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:50:39.620 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-2] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:50:39.638 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-3] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:50:39.638 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-3] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:50:39.640 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-3] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:54:40.779 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:54:40.780 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:54:40.783 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-5] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 17:54:40.800 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-6] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-03-13 17:54:40.800 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-6] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-03-13 17:54:40.802 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-6] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-03-13 18:04:26.950 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 18:04:26.951 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 18:04:26.953 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 20:24:31.134 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestPage], using SpringBootContextLoader
+2020-03-13 20:24:31.140 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestPage]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-13 20:24:31.277 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@49dc7102, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b8ca3c8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68c72235, org.springframework.test.context.support.DirtiesContextTestExecutionListener@10959ece, org.springframework.test.context.event.EventPublishingTestExecutionListener@3a6bb9bf] 
+2020-03-13 20:24:31.531 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - Starting TestPage on zzhMac.local with PID 6281 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-13 20:24:31.531 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-13 20:24:31.531 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - No active profile set, falling back to default profiles: default
+2020-03-13 20:24:32.460 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 20:24:32.651 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 20:24:33.189 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 20:24:33.539 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - Started TestPage in 2.204 seconds (JVM running for 3.144)
+2020-03-13 20:24:33.868 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo limit ?,?  
+2020-03-13 20:24:33.888 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==> Parameters: -20(Integer), 5(Integer) 
+2020-03-13 20:24:33.947 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 20:24:33.948 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 20:24:33.950 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 20:25:04.715 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestPage], using SpringBootContextLoader
+2020-03-13 20:25:04.719 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestPage]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-13 20:25:04.852 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@49dc7102, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b8ca3c8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68c72235, org.springframework.test.context.support.DirtiesContextTestExecutionListener@10959ece, org.springframework.test.context.event.EventPublishingTestExecutionListener@3a6bb9bf] 
+2020-03-13 20:25:05.081 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - Starting TestPage on zzhMac.local with PID 6283 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-13 20:25:05.082 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-13 20:25:05.082 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - No active profile set, falling back to default profiles: default
+2020-03-13 20:25:06.147 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 20:25:06.271 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 20:25:06.755 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 20:25:07.067 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - Started TestPage in 2.161 seconds (JVM running for 2.873)
+2020-03-13 20:25:07.393 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo limit ?,?  
+2020-03-13 20:25:07.415 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==> Parameters: 0(Integer), 5(Integer) 
+2020-03-13 20:25:07.434 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - <==      Total: 5 
+2020-03-13 20:25:07.437 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo limit ?,?  
+2020-03-13 20:25:07.437 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==> Parameters: 5(Integer), 5(Integer) 
+2020-03-13 20:25:07.439 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - <==      Total: 5 
+2020-03-13 20:25:07.440 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo limit ?,?  
+2020-03-13 20:25:07.440 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==> Parameters: 10(Integer), 5(Integer) 
+2020-03-13 20:25:07.442 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - <==      Total: 5 
+2020-03-13 20:25:07.447 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 20:25:07.449 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 20:25:07.451 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 21:00:01.788 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestPage], using SpringBootContextLoader
+2020-03-13 21:00:01.794 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestPage]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-13 21:00:01.947 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@49dc7102, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b8ca3c8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@68c72235, org.springframework.test.context.support.DirtiesContextTestExecutionListener@10959ece, org.springframework.test.context.event.EventPublishingTestExecutionListener@3a6bb9bf] 
+2020-03-13 21:00:02.214 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - Starting TestPage on zzhMac.local with PID 6322 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-13 21:00:02.214 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-13 21:00:02.215 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - No active profile set, falling back to default profiles: default
+2020-03-13 21:00:03.333 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 21:00:03.528 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 21:00:04.130 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 21:00:04.517 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestPage - Started TestPage in 2.503 seconds (JVM running for 3.486)
+2020-03-13 21:00:04.870 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo limit ?,?  
+2020-03-13 21:00:04.891 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==> Parameters: 0(Integer), 5(Integer) 
+2020-03-13 21:00:04.909 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - <==      Total: 5 
+2020-03-13 21:00:04.912 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo limit ?,?  
+2020-03-13 21:00:04.912 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==> Parameters: 5(Integer), 5(Integer) 
+2020-03-13 21:00:04.914 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - <==      Total: 5 
+2020-03-13 21:00:04.915 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo limit ?,?  
+2020-03-13 21:00:04.915 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - ==> Parameters: 10(Integer), 5(Integer) 
+2020-03-13 21:00:04.917 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.DemoMapper.getDemosByLimit - <==      Total: 5 
+2020-03-13 21:00:04.923 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 21:00:04.925 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 21:00:04.928 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 21:57:54.076 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestGroup], using SpringBootContextLoader
+2020-03-13 21:57:54.084 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestGroup]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-13 21:57:54.271 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@65f095f8, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@59af0466, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3e6ef8ad, org.springframework.test.context.support.DirtiesContextTestExecutionListener@346d61be, org.springframework.test.context.event.EventPublishingTestExecutionListener@55536d9e] 
+2020-03-13 21:57:54.590 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Starting TestGroup on zzhMac.local with PID 6461 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-13 21:57:54.591 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-13 21:57:54.592 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - No active profile set, falling back to default profiles: default
+2020-03-13 21:57:55.687 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 21:57:55.861 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 21:57:56.413 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 21:57:56.787 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Started TestGroup in 2.418 seconds (JVM running for 3.552)
+2020-03-13 21:57:57.169 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo  
+2020-03-13 21:57:57.194 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==> Parameters:  
+2020-03-13 21:57:57.219 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - <==      Total: 38 
+2020-03-13 21:57:57.231 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 21:57:57.233 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 21:57:57.236 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 22:25:11.203 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestGroup], using SpringBootContextLoader
+2020-03-13 22:25:11.209 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestGroup]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-13 22:25:11.352 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7fb4f2a9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4dc27487, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a4f1a55, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7dfd3c81, org.springframework.test.context.event.EventPublishingTestExecutionListener@2584b82d] 
+2020-03-13 22:25:11.665 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Starting TestGroup on zzhMac.local with PID 6478 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-13 22:25:11.666 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-13 22:25:11.666 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - No active profile set, falling back to default profiles: default
+2020-03-13 22:25:12.769 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 22:25:12.922 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 22:25:13.455 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:25:13.858 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Started TestGroup in 2.428 seconds (JVM running for 4.257)
+2020-03-13 22:25:14.048 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getAllNoParam - ==>  Preparing: select id,demo_id,score from score order by id  
+2020-03-13 22:25:14.071 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getAllNoParam - ==> Parameters:  
+2020-03-13 22:25:14.094 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getAllNoParam - <==      Total: 43 
+2020-03-13 22:25:14.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo  
+2020-03-13 22:25:14.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==> Parameters:  
+2020-03-13 22:25:14.110 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - <==      Total: 38 
+2020-03-13 22:25:14.112 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = 1  
+2020-03-13 22:25:14.112 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - ==> Parameters:  
+2020-03-13 22:25:14.113 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - <==      Total: 1 
+2020-03-13 22:25:14.119 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:25:14.120 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 22:25:14.124 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 22:34:42.014 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestGroup], using SpringBootContextLoader
+2020-03-13 22:34:42.020 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestGroup]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-13 22:34:42.159 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7fb4f2a9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4dc27487, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a4f1a55, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7dfd3c81, org.springframework.test.context.event.EventPublishingTestExecutionListener@2584b82d] 
+2020-03-13 22:34:42.456 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Starting TestGroup on zzhMac.local with PID 6492 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-13 22:34:42.457 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-13 22:34:42.457 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - No active profile set, falling back to default profiles: default
+2020-03-13 22:34:43.635 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 22:34:43.812 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 22:34:44.348 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:34:44.724 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Started TestGroup in 2.493 seconds (JVM running for 4.776)
+2020-03-13 22:34:44.921 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getAllNoParam - ==>  Preparing: select id,demo_id,score from score order by id  
+2020-03-13 22:34:44.944 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getAllNoParam - ==> Parameters:  
+2020-03-13 22:34:44.964 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getAllNoParam - <==      Total: 43 
+2020-03-13 22:34:44.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo  
+2020-03-13 22:34:44.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==> Parameters:  
+2020-03-13 22:34:44.977 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - <==      Total: 38 
+2020-03-13 22:34:44.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = 1  
+2020-03-13 22:34:44.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - ==> Parameters:  
+2020-03-13 22:34:44.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - <==      Total: 1 
+2020-03-13 22:34:44.988 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:34:44.989 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 22:34:44.992 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 22:38:55.075 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestGroup], using SpringBootContextLoader
+2020-03-13 22:38:55.080 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestGroup]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-13 22:38:55.220 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7fb4f2a9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4dc27487, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a4f1a55, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7dfd3c81, org.springframework.test.context.event.EventPublishingTestExecutionListener@2584b82d] 
+2020-03-13 22:38:55.530 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Starting TestGroup on zzhMac.local with PID 6496 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-13 22:38:55.531 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-13 22:38:55.531 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - No active profile set, falling back to default profiles: default
+2020-03-13 22:38:56.544 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 22:38:56.698 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 22:38:57.213 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:38:57.585 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Started TestGroup in 2.291 seconds (JVM running for 4.556)
+2020-03-13 22:38:57.778 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = 1  
+2020-03-13 22:38:57.801 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - ==> Parameters:  
+2020-03-13 22:38:57.821 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - <==      Total: 1 
+2020-03-13 22:38:57.833 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:38:57.835 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 22:38:57.838 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 22:47:32.965 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestGroup], using SpringBootContextLoader
+2020-03-13 22:47:32.970 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestGroup]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-13 22:47:33.080 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7fb4f2a9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4dc27487, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6a4f1a55, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7dfd3c81, org.springframework.test.context.event.EventPublishingTestExecutionListener@2584b82d] 
+2020-03-13 22:47:33.331 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Starting TestGroup on zzhMac.local with PID 6615 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-13 22:47:33.332 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-13 22:47:33.332 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - No active profile set, falling back to default profiles: default
+2020-03-13 22:47:34.169 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 22:47:34.299 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 22:47:34.735 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:47:35.060 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Started TestGroup in 1.92 seconds (JVM running for 10.417)
+2020-03-13 22:47:35.228 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo  
+2020-03-13 22:47:35.251 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==> Parameters:  
+2020-03-13 22:47:35.275 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - <==      Total: 38 
+2020-03-13 22:47:35.282 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = 1  
+2020-03-13 22:47:35.282 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - ==> Parameters:  
+2020-03-13 22:47:35.283 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetOneNoParam - <==      Total: 1 
+2020-03-13 22:47:35.290 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:47:35.292 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 22:47:35.295 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-13 22:48:01.703 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestGroup], using SpringBootContextLoader
+2020-03-13 22:48:01.707 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestGroup]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-13 22:48:01.829 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@59af0466, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3e6ef8ad, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@346d61be, org.springframework.test.context.support.DirtiesContextTestExecutionListener@55536d9e, org.springframework.test.context.event.EventPublishingTestExecutionListener@747edf66] 
+2020-03-13 22:48:02.045 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Starting TestGroup on zzhMac.local with PID 6618 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-13 22:48:02.045 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-13 22:48:02.045 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - No active profile set, falling back to default profiles: default
+2020-03-13 22:48:02.894 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-13 22:48:03.029 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-13 22:48:03.537 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:48:03.902 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestGroup - Started TestGroup in 2.018 seconds (JVM running for 2.717)
+2020-03-13 22:48:04.252 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo  
+2020-03-13 22:48:04.276 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - ==> Parameters:  
+2020-03-13 22:48:04.299 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] c.example.zzh.mapper.DemoMapper.testGetAllNoParam - <==      Total: 38 
+2020-03-13 22:48:04.308 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-13 22:48:04.309 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-13 22:48:04.312 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 

@@ -1,0 +1,74 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="paramSuite">
+    <!-- 测试param  -->
+    <groups>
+        <run>
+            <include name="singParam"></include>
+        </run>
+    </groups>
+    <parameter name="testName" value="alpha"/>
+    <parameter name="otherName" value="other"/>
+    <parameter name="testId" value="10"/>
+    <test name="paramTest1">
+        <parameter name="testName" value="bravo"/>
+        <classes>
+            <class name="com.example.zzh.test.TestParam">
+                <parameter name="testName" value="delta"/>
+                <methods>
+                    <parameter name="testName" value="echo"/>
+                    <include name="singleParam"/>
+                </methods>
+            </class>
+            <parameter name="testName" value="Charlie"/>
+        </classes>
+    </test>
+<!--    <test name="paramTest2">-->
+<!--        <classes>-->
+<!--            <class name="com.example.zzh.test.TestParam" />-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--      测试dataProvider  -->
+<!--    <test name="paramTest3">-->
+<!--        <classes>-->
+<!--            <class name="com.example.zzh.test.TestParam">-->
+<!--                <methods>-->
+<!--&lt;!&ndash;                    <include name="singleProvider"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="duoProvider"/>&ndash;&gt;-->
+<!--                    <include name="iterProvider"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <!--  测试数据库  -->
+    <test name="paramTest4">
+        <classes>
+            <class name="com.example.zzh.test.TestParam">
+                <parameter name="demoId" value="5"/>
+                <parameter name="score" value="100"/>
+                <parameter name="dId" value="46"/>
+                <parameter name="id" value="3"/>
+                <methods>
+<!--                    <include name="testAdd"/>-->
+<!--                    <include name="testUpdate"/>-->
+<!--                    <include name="testAddData"/>-->
+                    <include name="testOtherProvider"/>
+<!--                    <include name="testOption"/>-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="unique">
+        <groups>
+            <run>
+                <include name="unique"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.zzh.test.TestParam"></class>
+        </classes>
+    </test>
+</suite>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="otherSuite">
+    <!--  test标签中的属性preserve-order是用来保证在classes中的所有class按照顺序执行（默认就是true） -->
+    <test name="otherTest" preserve-order="true">
+        <groups>
+            <run>
+                <include name="order"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.zzh.test.TestOther">
+<!--                <methods>-->
+<!--                    <include name="testOrderC"/>-->
+<!--                    <include name="testOrderB"/>-->
+<!--                    <include name="testOrderA"/>-->
+<!--                    <include name="testOrderD"/>-->
+<!--                </methods>-->
+                <methods>
+<!--                    <include name="testParallel"/>-->
+<!--                    <include name="testParallelDatabase"/>-->
+                    <parameter name="id" value="78"/>
+<!--                    <include name="testUpdateParallel"/>-->
+                    <include name="testRealParallel"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

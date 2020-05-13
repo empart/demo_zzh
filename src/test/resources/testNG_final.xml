@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="finalSuite">
+    <parameter name="qaPreUrl" value="http://10.4.4.140:8905/"/>
+    <test name="finalTest">
+        <classes>
+            <class name="com.example.zzh.test.FinalTest"/>
+        </classes>
+    </test>
+</suite>

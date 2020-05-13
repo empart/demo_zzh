@@ -1,0 +1,907 @@
+2020-03-11 14:51:59.650 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestParam], using SpringBootContextLoader
+2020-03-11 14:51:59.662 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestParam]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 14:51:59.830 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14bdbc74, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12591ac8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5a7fe64f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@38145825, org.springframework.test.context.event.EventPublishingTestExecutionListener@41330d4f] 
+2020-03-11 14:52:00.145 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Starting TestParam on zzhMac.local with PID 1365 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 14:52:00.146 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 14:52:00.146 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - No active profile set, falling back to default profiles: default
+2020-03-11 14:52:01.189 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 14:52:01.337 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 14:52:01.766 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 14:52:02.111 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Started TestParam in 2.196 seconds (JVM running for 3.847)
+2020-03-11 14:52:02.216 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:02.218 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:02.218 INFO  [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidAbstractDataSource - {dataSource-1} failContinuous is true 
+2020-03-11 14:52:02.724 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:03.229 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:03.732 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:04.234 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:04.738 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:05.244 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:05.748 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:06.252 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:06.755 ERROR [spring.application.name_IS_UNDEFINED,,,] [Druid-ConnectionPool-Create-1966114624] com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://localhost:3306/zzhdemo, errorCode 0, state 08S01 
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.21.jar:1.1.21]
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2753) ~[druid-1.1.21.jar:1.1.21]
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_211]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_211]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_211]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_211]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 6 common frames omitted
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_211]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:155) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65) ~[mysql-connector-java-8.0.18.jar:8.0.18]
+	... 9 common frames omitted
+2020-03-11 14:52:07.151 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 14:52:07.152 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 14:52:07.152 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 14:52:30.653 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestParam], using SpringBootContextLoader
+2020-03-11 14:52:30.658 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestParam]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 14:52:30.767 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5dafbe45, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2254127a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@51891008, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2f953efd, org.springframework.test.context.event.EventPublishingTestExecutionListener@f68f0dc] 
+2020-03-11 14:52:31.003 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Starting TestParam on zzhMac.local with PID 1498 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 14:52:31.003 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 14:52:31.004 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - No active profile set, falling back to default profiles: default
+2020-03-11 14:52:31.832 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 14:52:31.967 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 14:52:32.405 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 14:52:32.696 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Started TestParam in 1.868 seconds (JVM running for 3.695)
+2020-03-11 14:52:32.879 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getScoreById - ==>  Preparing: select id,demo_id,score from score where id = ?  
+2020-03-11 14:52:32.901 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getScoreById - ==> Parameters: 3(Integer) 
+2020-03-11 14:52:32.923 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getScoreById - <==      Total: 1 
+2020-03-11 14:52:32.980 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 14:52:32.981 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 14:52:32.983 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 15:00:52.971 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestParam], using SpringBootContextLoader
+2020-03-11 15:00:52.975 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestParam]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 15:00:53.083 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@f68f0dc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@d2de489, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@14bdbc74, org.springframework.test.context.support.DirtiesContextTestExecutionListener@12591ac8, org.springframework.test.context.event.EventPublishingTestExecutionListener@5a7fe64f] 
+2020-03-11 15:00:53.313 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Starting TestParam on zzhMac.local with PID 1523 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 15:00:53.314 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:00:53.314 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - No active profile set, falling back to default profiles: default
+2020-03-11 15:00:54.227 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 15:00:54.401 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 15:00:54.950 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:00:55.291 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Started TestParam in 2.148 seconds (JVM running for 3.496)
+2020-03-11 15:00:55.461 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getScoreById - ==>  Preparing: select id,demo_id,score from score where id = ?  
+2020-03-11 15:00:55.486 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getScoreById - ==> Parameters: 3(Integer) 
+2020-03-11 15:00:55.505 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getScoreById - <==      Total: 1 
+2020-03-11 15:00:55.555 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:00:55.555 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 15:00:55.558 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 15:01:18.003 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestParam], using SpringBootContextLoader
+2020-03-11 15:01:18.008 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestParam]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 15:01:18.128 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@14bdbc74, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12591ac8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5a7fe64f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@38145825, org.springframework.test.context.event.EventPublishingTestExecutionListener@41330d4f] 
+2020-03-11 15:01:18.379 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Starting TestParam on zzhMac.local with PID 1532 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 15:01:18.380 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:01:18.380 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - No active profile set, falling back to default profiles: default
+2020-03-11 15:01:19.225 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 15:01:19.361 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 15:01:19.808 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:01:20.101 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestParam - Started TestParam in 1.91 seconds (JVM running for 3.203)
+2020-03-11 15:01:20.254 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getScoreById - ==>  Preparing: select id,demo_id,score from score where id = ?  
+2020-03-11 15:01:20.275 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getScoreById - ==> Parameters: 1(Integer) 
+2020-03-11 15:01:20.293 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.mapper.ScoreMapper.getScoreById - <==      Total: 1 
+2020-03-11 15:01:20.347 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:01:20.347 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 15:01:20.350 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 15:11:25.978 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 15:11:25.983 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 15:11:26.100 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29d80d2b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@58e1d9d, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@446a1e84, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4f0f2942, org.springframework.test.context.event.EventPublishingTestExecutionListener@2657d4dd] 
+2020-03-11 15:11:26.361 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1575 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 15:11:26.361 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:11:26.362 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 15:11:27.211 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 15:11:27.345 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 15:11:27.756 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:11:28.078 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 1.92 seconds (JVM running for 3.585)
+2020-03-11 15:11:28.102 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:11:28.103 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 15:11:28.104 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 15:12:52.521 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 15:12:52.525 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 15:12:52.642 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@47caedad, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7139992f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@69504ae9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@387a8303, org.springframework.test.context.event.EventPublishingTestExecutionListener@28cda624] 
+2020-03-11 15:12:52.910 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1577 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 15:12:52.911 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:12:52.911 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 15:12:53.878 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 15:12:53.996 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 15:12:54.419 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:12:54.720 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 2.023 seconds (JVM running for 3.375)
+2020-03-11 15:12:54.751 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:12:54.752 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 15:12:54.753 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 15:27:17.912 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 15:27:17.916 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 15:27:18.031 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@58e1d9d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@446a1e84, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4f0f2942, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2657d4dd, org.springframework.test.context.event.EventPublishingTestExecutionListener@5340477f] 
+2020-03-11 15:27:18.284 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1639 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 15:27:18.285 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:27:18.285 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 15:27:19.208 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 15:27:19.333 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 15:27:19.765 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:27:20.062 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 1.974 seconds (JVM running for 3.399)
+2020-03-11 15:27:20.090 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:27:20.091 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 15:27:20.098 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 15:31:50.611 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 15:31:50.616 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 15:31:50.726 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5340477f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47caedad, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7139992f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@69504ae9, org.springframework.test.context.event.EventPublishingTestExecutionListener@387a8303] 
+2020-03-11 15:31:50.984 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1679 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 15:31:50.985 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:31:50.985 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 15:31:51.859 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 15:31:52.026 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 15:31:52.464 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:31:52.740 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 1.959 seconds (JVM running for 3.31)
+2020-03-11 15:31:52.770 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:31:52.771 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 15:31:52.772 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 15:35:32.530 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 15:35:32.534 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 15:35:32.650 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5340477f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@47caedad, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7139992f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@69504ae9, org.springframework.test.context.event.EventPublishingTestExecutionListener@387a8303] 
+2020-03-11 15:35:32.921 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1706 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 15:35:32.922 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:35:32.922 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 15:35:33.891 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 15:35:34.019 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 15:35:34.448 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:35:34.760 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 2.048 seconds (JVM running for 3.472)
+2020-03-11 15:35:34.797 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:35:34.798 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 15:35:34.798 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 15:59:44.828 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 15:59:44.833 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 15:59:44.949 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@126253fd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@57db2b13, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@475c9c31, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5c86a017, org.springframework.test.context.event.EventPublishingTestExecutionListener@5c7bfdc1] 
+2020-03-11 15:59:45.213 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1755 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 15:59:45.214 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 15:59:45.214 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 15:59:46.142 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 15:59:46.275 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 15:59:46.704 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:59:46.998 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 1.987 seconds (JVM running for 3.26)
+2020-03-11 15:59:47.035 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 15:59:47.036 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 15:59:47.037 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 16:01:10.177 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 16:01:10.182 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 16:01:10.306 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@26275bef, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7690781, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@77eca502, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3246fb96, org.springframework.test.context.event.EventPublishingTestExecutionListener@2e222612] 
+2020-03-11 16:01:10.528 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1760 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 16:01:10.528 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:01:10.529 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 16:01:11.449 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 16:01:11.620 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 16:01:12.121 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:01:12.437 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 2.072 seconds (JVM running for 3.166)
+2020-03-11 16:01:17.499 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:01:17.500 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 16:01:17.501 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 16:01:51.734 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 16:01:51.739 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 16:01:51.870 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7690781, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@77eca502, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3246fb96, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2e222612, org.springframework.test.context.event.EventPublishingTestExecutionListener@61386958] 
+2020-03-11 16:01:52.110 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1762 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 16:01:52.110 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:01:52.110 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 16:01:53.031 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 16:01:53.152 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 16:01:53.585 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:01:53.889 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 1.963 seconds (JVM running for 2.685)
+2020-03-11 16:01:58.915 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:01:58.916 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 16:01:58.917 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 16:24:27.376 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 16:24:27.381 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 16:24:27.508 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@26275bef, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7690781, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@77eca502, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3246fb96, org.springframework.test.context.event.EventPublishingTestExecutionListener@2e222612] 
+2020-03-11 16:24:27.718 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1860 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 16:24:27.719 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:24:27.719 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 16:24:28.562 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 16:24:28.691 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 16:24:29.215 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:24:29.549 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 1.984 seconds (JVM running for 2.694)
+2020-03-11 16:24:29.900 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.905 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.916 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.924 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小M(String), N(String), 2(Integer), 1(Integer), 0(Integer) 
+2020-03-11 16:24:29.924 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小D(String), N(String), 3(Integer), 3(Integer), 1(Integer) 
+2020-03-11 16:24:29.924 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小A(String), G(String), 2(Integer), 3(Integer), 0(Integer) 
+2020-03-11 16:24:29.926 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.927 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.927 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.927 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.927 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小X(String), Z(String), 3(Integer), 1(Integer), 1(Integer) 
+2020-03-11 16:24:29.929 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.937 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.938 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小Q(String), Y(String), 4(Integer), 3(Integer), 0(Integer) 
+2020-03-11 16:24:29.939 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 13(Integer), 20(Integer) 
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 11(Integer), 6(Integer) 
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 10(Integer), 85(Integer) 
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 12(Integer), 78(Integer) 
+2020-03-11 16:24:29.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 9(Integer), 12(Integer) 
+2020-03-11 16:24:29.945 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.945 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.945 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.945 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.945 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.948 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.948 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.948 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.948 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.948 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.949 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小S(String), D(String), 1(Integer), 2(Integer), 1(Integer) 
+2020-03-11 16:24:29.949 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小J(String), T(String), 1(Integer), 3(Integer), 1(Integer) 
+2020-03-11 16:24:29.949 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小I(String), H(String), 3(Integer), 2(Integer), 0(Integer) 
+2020-03-11 16:24:29.950 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小K(String), V(String), 3(Integer), 2(Integer), 1(Integer) 
+2020-03-11 16:24:29.950 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小V(String), V(String), 4(Integer), 1(Integer), 1(Integer) 
+2020-03-11 16:24:29.951 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.951 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 14(Integer), 24(Integer) 
+2020-03-11 16:24:29.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 16(Integer), 7(Integer) 
+2020-03-11 16:24:29.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 15(Integer), 22(Integer) 
+2020-03-11 16:24:29.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 17(Integer), 49(Integer) 
+2020-03-11 16:24:29.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 18(Integer), 98(Integer) 
+2020-03-11 16:24:29.954 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.954 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.954 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.955 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.955 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.956 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.956 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.956 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小V(String), P(String), 2(Integer), 3(Integer), 0(Integer) 
+2020-03-11 16:24:29.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小B(String), O(String), 2(Integer), 2(Integer), 0(Integer) 
+2020-03-11 16:24:29.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小U(String), N(String), 3(Integer), 1(Integer), 0(Integer) 
+2020-03-11 16:24:29.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小S(String), C(String), 4(Integer), 2(Integer), 1(Integer) 
+2020-03-11 16:24:29.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小X(String), L(String), 3(Integer), 3(Integer), 1(Integer) 
+2020-03-11 16:24:29.958 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 19(Integer), 58(Integer) 
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 20(Integer), 33(Integer) 
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.959 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.960 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 23(Integer), 90(Integer) 
+2020-03-11 16:24:29.960 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 21(Integer), 31(Integer) 
+2020-03-11 16:24:29.960 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 22(Integer), 21(Integer) 
+2020-03-11 16:24:29.961 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.961 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.961 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.961 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.961 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.963 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.963 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.963 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.963 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.963 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.964 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小A(String), T(String), 1(Integer), 2(Integer), 1(Integer) 
+2020-03-11 16:24:29.964 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小P(String), K(String), 4(Integer), 1(Integer), 1(Integer) 
+2020-03-11 16:24:29.964 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小U(String), K(String), 1(Integer), 3(Integer), 0(Integer) 
+2020-03-11 16:24:29.964 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小L(String), R(String), 1(Integer), 3(Integer), 0(Integer) 
+2020-03-11 16:24:29.964 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小P(String), T(String), 3(Integer), 3(Integer), 1(Integer) 
+2020-03-11 16:24:29.966 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.966 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 24(Integer), 7(Integer) 
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 25(Integer), 5(Integer) 
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 28(Integer), 15(Integer) 
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 27(Integer), 50(Integer) 
+2020-03-11 16:24:29.967 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 26(Integer), 53(Integer) 
+2020-03-11 16:24:29.968 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.969 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.969 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.969 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.969 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小Z(String), B(String), 2(Integer), 1(Integer), 1(Integer) 
+2020-03-11 16:24:29.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小O(String), C(String), 2(Integer), 2(Integer), 1(Integer) 
+2020-03-11 16:24:29.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小J(String), R(String), 4(Integer), 1(Integer), 1(Integer) 
+2020-03-11 16:24:29.971 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小U(String), H(String), 1(Integer), 2(Integer), 0(Integer) 
+2020-03-11 16:24:29.972 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小W(String), N(String), 4(Integer), 3(Integer), 1(Integer) 
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 32(Integer), 49(Integer) 
+2020-03-11 16:24:29.974 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 33(Integer), 16(Integer) 
+2020-03-11 16:24:29.975 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 30(Integer), 23(Integer) 
+2020-03-11 16:24:29.975 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 29(Integer), 72(Integer) 
+2020-03-11 16:24:29.975 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 31(Integer), 6(Integer) 
+2020-03-11 16:24:29.976 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.976 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.976 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.976 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.976 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.978 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==>  Preparing: INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted) VALUES (?,?,?,?,?)  
+2020-03-11 16:24:29.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小Y(String), A(String), 3(Integer), 2(Integer), 0(Integer) 
+2020-03-11 16:24:29.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小B(String), X(String), 2(Integer), 3(Integer), 1(Integer) 
+2020-03-11 16:24:29.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小W(String), H(String), 1(Integer), 1(Integer), 1(Integer) 
+2020-03-11 16:24:29.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小E(String), Y(String), 4(Integer), 3(Integer), 0(Integer) 
+2020-03-11 16:24:29.979 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - ==> Parameters: 小W(String), K(String), 3(Integer), 1(Integer), 0(Integer) 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.DemoMapper.add2 - <==    Updates: 1 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==>  Preparing: insert into score (demo_id,score) values (?,?)  
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 36(Integer), 53(Integer) 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 34(Integer), 50(Integer) 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 38(Integer), 91(Integer) 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 35(Integer), 11(Integer) 
+2020-03-11 16:24:29.981 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - ==> Parameters: 37(Integer), 87(Integer) 
+2020-03-11 16:24:29.983 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.983 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.983 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.983 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.983 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.add - <==    Updates: 1 
+2020-03-11 16:24:29.989 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:24:29.990 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 16:24:29.993 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 16:39:07.977 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 16:39:07.982 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 16:39:08.112 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@475c9c31, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5c86a017, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5c7bfdc1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5276d6ee, org.springframework.test.context.event.EventPublishingTestExecutionListener@71687585] 
+2020-03-11 16:39:08.378 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1873 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 16:39:08.379 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:39:08.379 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 16:39:09.303 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 16:39:09.437 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 16:39:09.862 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:39:10.163 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 1.992 seconds (JVM running for 3.478)
+2020-03-11 16:39:10.330 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.334 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.346 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.354 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.354 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.354 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.357 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.357 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.357 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.358 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.358 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.358 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.358 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.358 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.359 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.359 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.359 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.359 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.359 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.359 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.360 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.361 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.361 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.361 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.361 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-03-11 16:39:10.361 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.361 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:39:10.362 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.363 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.363 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:39:10.368 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:39:10.369 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 16:39:10.373 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 16:52:33.594 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 16:52:33.598 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 16:52:33.709 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@475c9c31, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5c86a017, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5c7bfdc1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5276d6ee, org.springframework.test.context.event.EventPublishingTestExecutionListener@71687585] 
+2020-03-11 16:52:33.981 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1906 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 16:52:33.982 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:52:33.982 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 16:52:34.878 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 16:52:35.009 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 16:52:35.421 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:52:35.739 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 1.968 seconds (JVM running for 3.611)
+2020-03-11 16:52:35.915 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.919 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.931 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.939 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:35.939 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:35.939 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:35.942 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.943 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:35.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.954 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:35.956 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and socre >=10  
+2020-03-11 16:52:35.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:35.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:35.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:35.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:35.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 44(Integer) 
+2020-03-11 16:52:36.020 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:52:36.021 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 16:52:36.024 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-03-11 16:53:22.747 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader
+2020-03-11 16:53:22.751 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-03-11 16:53:22.870 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5c86a017, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5c7bfdc1, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5276d6ee, org.springframework.test.context.support.DirtiesContextTestExecutionListener@71687585, org.springframework.test.context.event.EventPublishingTestExecutionListener@1807f5a7] 
+2020-03-11 16:53:23.135 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 1909 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh)
+2020-03-11 16:53:23.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE
+2020-03-11 16:53:23.136 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default
+2020-03-11 16:53:23.974 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-03-11 16:53:24.115 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-03-11 16:53:24.544 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:53:24.846 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 1.91 seconds (JVM running for 3.327)
+2020-03-11 16:53:25.035 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.039 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.051 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.060 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.060 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.060 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.063 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:53:25.063 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.063 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:53:25.063 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.063 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:53:25.064 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.064 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.064 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.064 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.064 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.064 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.065 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:53:25.065 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.065 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-03-11 16:53:25.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-03-11 16:53:25.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-03-11 16:53:25.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-03-11 16:53:25.067 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.067 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-03-11 16:53:25.067 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.067 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 42(Integer) 
+2020-03-11 16:53:25.068 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-03-11 16:53:25.068 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-03-11 16:53:25.079 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-03-11 16:53:25.081 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-03-11 16:53:25.084 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 

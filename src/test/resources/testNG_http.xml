@@ -1,0 +1,48 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="httpSuite">
+    <parameter name="preUrl" value="http://localhost:8787/"/>
+    <parameter name="qaPreUrl" value="http://10.4.4.140:8905/"/>
+<!--    <test name="getTest">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="local"/>-->
+<!--&lt;!&ndash;                <include name="qaGet"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <exclude name="local"/>&ndash;&gt;-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.example.zzh.test.TestHttp">-->
+<!--                <methods>-->
+<!--                    <include name="getObject1"/>-->
+<!--&lt;!&ndash;                    <include name="getEntity"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="testGet"/>&ndash;&gt;-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="postTest">-->
+<!--        <parameter name="recordId" value="4"/>-->
+<!--        <parameter name="challengerId" value="1846"/>-->
+<!--        <parameter name="pkScore" value="1"/>-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="qaPost"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.example.zzh.test.TestHttp"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="putAndDelTest">
+        <parameter name="giftId" value="21"/>
+        <groups>
+            <run>
+                <include name="putAndDel"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.zzh.test.TestHttp"/>
+        </classes>
+    </test>
+</suite>

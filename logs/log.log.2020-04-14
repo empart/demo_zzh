@@ -1,0 +1,369 @@
+2020-04-14 20:43:07.455 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader 
+2020-04-14 20:43:07.466 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2020-04-14 20:43:07.642 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@346d61be, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@55536d9e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@747edf66, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3d1cfad4, org.springframework.test.context.event.EventPublishingTestExecutionListener@62230c58] 
+2020-04-14 20:43:07.925 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 7258 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-04-14 20:43:07.926 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-04-14 20:43:07.926 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default 
+2020-04-14 20:43:09.078 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-04-14 20:43:09.272 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-04-14 20:43:09.900 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-04-14 20:43:10.265 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 2.544 seconds (JVM running for 3.677) 
+2020-04-14 20:43:10.290 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-04-14 20:43:10.291 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-04-14 20:43:10.292 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-04-14 20:45:25.979 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader 
+2020-04-14 20:45:25.985 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2020-04-14 20:45:26.113 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7dfb0c0f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@626abbd0, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@169bb4dd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1f9e9475, org.springframework.test.context.event.EventPublishingTestExecutionListener@3aa078fd] 
+2020-04-14 20:45:26.415 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 7261 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-04-14 20:45:26.416 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-04-14 20:45:26.417 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default 
+2020-04-14 20:45:27.569 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-04-14 20:45:27.726 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-04-14 20:45:28.272 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-04-14 20:45:28.675 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 2.492 seconds (JVM running for 4.192) 
+2020-04-14 20:45:28.913 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.920 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.935 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.942 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.942 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.942 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.947 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.948 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.948 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.949 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.949 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.949 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.949 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.949 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.949 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.950 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.951 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.952 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.953 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ?  
+2020-04-14 20:45:28.954 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.954 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.954 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 66(Integer) 
+2020-04-14 20:45:28.955 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.956 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.956 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.957 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:45:28.964 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-04-14 20:45:28.965 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-04-14 20:45:28.968 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-04-14 20:53:03.085 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.zzh.test.TestOther], using SpringBootContextLoader 
+2020-04-14 20:53:03.090 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.zzh.test.TestOther]: no resource found for suffixes {-context.xml, Context.groovy}. 
+2020-04-14 20:53:03.226 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6933b6c6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7d3e8655, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7dfb0c0f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@626abbd0, org.springframework.test.context.event.EventPublishingTestExecutionListener@169bb4dd] 
+2020-04-14 20:53:03.501 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Starting TestOther on zzhMac.local with PID 7265 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/test-classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-04-14 20:53:03.502 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-04-14 20:53:03.503 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - No active profile set, falling back to default profiles: default 
+2020-04-14 20:53:04.751 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-04-14 20:53:04.905 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-04-14 20:53:05.446 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-04-14 20:53:05.817 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.test.TestOther - Started TestOther in 2.524 seconds (JVM running for 4.049) 
+2020-04-14 20:53:06.019 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.025 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.039 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.046 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.046 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.046 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.054 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:53:06.054 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:53:06.055 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:53:06.056 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.056 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.056 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.056 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.056 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.056 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.058 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.058 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:53:06.061 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:53:06.061 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.061 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.061 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 1 
+2020-04-14 20:53:06.062 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.064 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.064 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.065 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.065 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.066 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.069 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.069 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.070 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.070 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.070 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.070 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.070 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.071 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.071 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.071 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.071 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.071 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.072 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.072 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.072 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.072 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.072 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.072 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.073 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.073 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.073 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.073 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.073 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.073 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.073 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.074 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.074 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.074 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.074 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.075 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.076 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.076 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.078 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.078 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.078 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.078 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.080 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.080 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.080 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.080 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.081 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.081 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.081 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.081 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.083 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.083 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.083 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.083 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.083 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.083 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.083 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.083 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.084 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.084 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.084 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.084 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.088 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.088 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.088 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.088 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.088 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.088 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.088 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.089 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.089 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.089 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.091 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.091 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.093 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.093 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.093 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.093 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.093 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.094 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.094 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.094 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.094 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.094 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.094 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.094 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.095 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.095 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.095 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.096 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.096 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.096 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.100 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.100 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.100 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.100 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.101 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.101 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.101 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.101 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.102 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.103 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.103 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.104 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.105 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.105 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.106 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.108 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.108 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.108 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.108 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.108 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.108 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.109 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.109 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.109 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.109 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.109 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.110 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.110 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.110 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.114 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.114 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.114 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.114 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.114 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.115 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.118 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.118 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.118 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.118 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.118 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.119 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.122 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.122 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.123 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.125 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.126 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.127 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.127 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.127 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.129 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.130 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.130 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.130 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.130 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.130 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.133 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.135 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.136 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.137 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.137 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.137 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.139 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.139 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.139 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==>  Preparing: update score set score = score - 10 where id = ? and score >=10  
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.140 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - ==> Parameters: 78(Integer) 
+2020-04-14 20:53:06.142 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.142 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.143 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.143 DEBUG [spring.application.name_IS_UNDEFINED,,,] [TestNG] com.example.zzh.mapper.ScoreMapper.minus - <==    Updates: 0 
+2020-04-14 20:53:06.150 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-04-14 20:53:06.151 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-04-14 20:53:06.157 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 

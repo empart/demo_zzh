@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [paramSuite]" parallel="none">
+  <test name="paramTest4(failed)" parallel="none">
+    <classes>
+      <class name="com.example.zzh.test.TestParam">
+        <parameter name="score" value="100"/>
+        <parameter name="demoId" value="5"/>
+        <parameter name="dId" value="5"/>
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="testOption" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.example.zzh.test.TestParam -->
+    </classes>
+  </test> <!-- paramTest4(failed) -->
+</suite> <!-- Failed suite [paramSuite] -->

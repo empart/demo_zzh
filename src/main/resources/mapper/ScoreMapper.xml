@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.zzh.mapper.ScoreMapper">
+
+    <select id="getAllNoParam" resultType="com.example.zzh.model.Score">
+        select id,demo_id,score from score order by id
+    </select>
+
+    <select id="getOneNoParam" resultType="com.example.zzh.model.Score">
+        select id,demo_id,score from score where id = 1
+    </select>
+
+    <select id="getScoreById" resultType="com.example.zzh.model.Score">
+        select id,demo_id,score from score
+        where id = #{id}
+    </select>
+
+    <insert id="add" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        insert into score (demo_id,score) values (#{score.demoId},#{score.score})
+    </insert>
+
+    <update id="updateByDemoId">
+        update score set score = 0 where demo_id = #{demoId}
+    </update>
+
+    <update id="update">
+        update score set score = 77 where id = #{id}
+    </update>
+
+    <update id="minus">
+        update score set score = score - 10 where id = #{id} and score &gt;=10
+    </update>
+
+
+    <select id="getList" resultType="com.example.zzh.model.Score">
+        select id,demo_id,score from score
+        <where>
+            <if test="demoId != null">
+                and demo_id = #{demoId}
+            </if>
+            <if test="minScore != null">
+                and score &gt; #{minScore}
+            </if>
+        </where>
+    </select>
+</mapper>

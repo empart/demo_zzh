@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.zzh.mapper.DemoMapper">
+
+    <insert id="add1">
+        INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted)
+        VALUES (#{demo.name},#{demo.nickName},#{demo.demoStatus},#{demo.demoType},#{demo.isDeleted})
+    </insert>
+    <insert id="add2" parameterType="com.example.zzh.model.Demo" useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted)
+        VALUES (#{demo.name},#{demo.nickName},#{demo.demoStatus},#{demo.demoType},#{demo.isDeleted})
+    </insert>
+    <insert id="add3" parameterType="com.example.zzh.model.Demo">
+        INSERT INTO demo (name,nick_name,demo_status,demo_type,is_deleted)
+        VALUES (#{demo.name},#{demo.nickName},#{demo.demoStatus},#{demo.demoType},#{demo.isDeleted})
+    </insert>
+
+    <select id="get1" resultType="com.example.zzh.model.Demo">
+        select id,name,nick_name,demo_status,demo_type,is_deleted
+        from demo
+        where demo_type = #{demoType}
+        and name like concat('%',#{name},'%')
+        and nick_name = #{nickName}
+    </select>
+    <select id="get2" resultType="com.example.zzh.model.Demo">
+        select id,name,nick_name,demo_status,demo_type,is_deleted
+        from demo
+        where demo_type = #{demoType}
+        and name like concat('%',#{name},'%')
+        <if test="nickName != null">
+            and nick_name = #{nickName}
+        </if>
+    </select>
+    <select id="get3" resultType="com.example.zzh.model.Demo">
+        select id,name,nick_name,demo_status,demo_type,is_deleted
+        from demo
+        where demo_type = #{demoType}
+        and name like concat('%',#{name},'%')
+        <if test="demoTest != null">
+            and demo_status = #{demoTest.demoStatus}
+        </if>
+    </select>
+    <select id="get4" resultType="com.example.zzh.model.Demo">
+        select id,name,nick_name,demo_status,demo_type,is_deleted
+        from demo
+        where
+        <if test="demoType != null">
+            demo_type = #{demoType}
+        </if>
+        and name like concat('%',#{name},'%')
+        and demo_status = #{demoTest.demoStatus}
+    </select>
+
+    <select id="testGetAllNoParam" resultType="com.example.zzh.model.Demo">
+        select id,name,nick_name,demo_status,demo_type,is_deleted from demo
+    </select>
+    <select id="testGetOneNoParam" resultType="com.example.zzh.model.Demo">
+        select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = 1
+    </select>
+
+
+    <select id="getDemosByLimit" resultType="com.example.zzh.model.Demo">
+        select id,name,nick_name,demo_status,demo_type,is_deleted from demo limit #{start},#{pageSize}
+    </select>
+
+
+    <select id="getOne" resultType="com.example.zzh.model.Demo">
+        select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = #{id}
+    </select>
+
+    <delete id="deleteDemo">
+        delete from demo where id = #{id};
+    </delete>
+
+    <update id="updateById" parameterType="com.example.zzh.model.Demo">
+        update demo set name=#{demo.name},nick_name=#{demo.nickName},demo_status=#{demo.demoStatus},demo_type=#{demo.demoType} where id = #{demo.id}
+    </update>
+
+
+</mapper>

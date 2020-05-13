@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.zzh.mapper.ChannelMapper">
+    <select id="checkChannleSku" resultType="integer">
+        SELECT id FROM trade_channel_sku WHERE sku_id = #{skuId} AND is_deleted = 0
+    </select>
+</mapper>

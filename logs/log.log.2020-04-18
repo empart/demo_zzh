@@ -1,0 +1,51 @@
+2020-04-18 20:56:53.394 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Starting ZzhApplication on zzhMac.local with PID 3495 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-04-18 20:56:53.410 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-04-18 20:56:53.410 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - No active profile set, falling back to default profiles: default 
+2020-04-18 20:56:54.526 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http) 
+2020-04-18 20:56:54.534 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"] 
+2020-04-18 20:56:54.535 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2020-04-18 20:56:54.535 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30] 
+2020-04-18 20:56:54.601 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2020-04-18 20:56:54.601 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1132 ms 
+2020-04-18 20:56:54.716 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-04-18 20:56:54.816 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-04-18 20:56:55.076 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-04-18 20:56:55.333 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"] 
+2020-04-18 20:56:55.363 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path '' 
+2020-04-18 20:56:55.367 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Started ZzhApplication in 2.288 seconds (JVM running for 3.131) 
+2020-04-18 20:58:26.919 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2020-04-18 20:58:26.919 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2020-04-18 20:58:26.925 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms 
+2020-04-18 20:58:27.236 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-04-18 20:58:27.256 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-04-18 20:58:27.282 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-04-18 21:01:35.169 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-3] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-04-18 21:01:35.169 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-3] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-04-18 21:01:35.170 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-3] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-04-18 21:03:05.216 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-04-18 21:03:05.216 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-04-18 21:03:05.218 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
+2020-04-18 21:12:08.516 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Starting ZzhApplication on zzhMac.local with PID 3646 (/Users/zhaozhihong/IdeaProjects/demo_zzh/target/classes started by zhaozhihong in /Users/zhaozhihong/IdeaProjects/demo_zzh) 
+2020-04-18 21:12:08.518 DEBUG [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Running with Spring Boot v2.2.3.RELEASE, Spring v5.2.3.RELEASE 
+2020-04-18 21:12:08.518 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - No active profile set, falling back to default profiles: default 
+2020-04-18 21:12:09.384 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http) 
+2020-04-18 21:12:09.390 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"] 
+2020-04-18 21:12:09.391 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardService - Starting service [Tomcat] 
+2020-04-18 21:12:09.391 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30] 
+2020-04-18 21:12:09.444 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext 
+2020-04-18 21:12:09.444 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 893 ms 
+2020-04-18 21:12:09.542 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource 
+2020-04-18 21:12:09.618 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited 
+2020-04-18 21:12:09.901 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor' 
+2020-04-18 21:12:10.141 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"] 
+2020-04-18 21:12:10.169 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path '' 
+2020-04-18 21:12:10.173 INFO  [spring.application.name_IS_UNDEFINED,,,] [main] com.example.zzh.ZzhApplication - Started ZzhApplication in 1.863 seconds (JVM running for 2.556) 
+2020-04-18 21:12:21.580 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2020-04-18 21:12:21.580 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet' 
+2020-04-18 21:12:21.587 INFO  [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms 
+2020-04-18 21:12:21.907 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==>  Preparing: select id,name,nick_name,demo_status,demo_type,is_deleted from demo where id = ?  
+2020-04-18 21:12:21.925 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - ==> Parameters: 5(Integer) 
+2020-04-18 21:12:21.940 DEBUG [spring.application.name_IS_UNDEFINED,,,] [http-nio-8787-exec-1] com.example.zzh.mapper.DemoMapper.getOne - <==      Total: 1 
+2020-04-18 22:19:21.906 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor' 
+2020-04-18 22:19:21.907 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ... 
+2020-04-18 22:19:21.907 INFO  [spring.application.name_IS_UNDEFINED,,,] [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed 
