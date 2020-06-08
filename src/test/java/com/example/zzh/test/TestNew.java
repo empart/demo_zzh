@@ -10,6 +10,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Test;
 
+import javax.annotation.Resource;
+
 /**
  * @Author: zhao zhihong
  * @Date: 2020/4/26
@@ -24,8 +26,11 @@ public class TestNew extends AbstractTestNGSpringContextTests {
     @Qualifier("TestServiceOne")
     private TestService testServiceOne;
 
-    @Autowired
-    @Qualifier("TestServiceTwo")
+//    @Autowired
+//    @Qualifier("TestServiceTwo")
+//    private TestService testServiceTwo;
+
+    @Resource(name = "TestServiceTwo")
     private TestService testServiceTwo;
 
 

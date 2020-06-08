@@ -1,6 +1,7 @@
 package com.example.zzh.service.impl;
 
 import com.example.zzh.service.TestService;
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 /**
