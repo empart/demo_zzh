@@ -17,6 +17,9 @@ import org.testng.annotations.Test;
 @SpringBootTest(classes = ZzhApplication.class)
 public class TestNew extends AbstractTestNGSpringContextTests {
 
+    /**
+     * 一个接口有不同的实现类时，使用@Qualifier来指定名字然后注入
+     */
     @Autowired
     @Qualifier("TestServiceOne")
     private TestService testServiceOne;
@@ -40,6 +43,9 @@ public class TestNew extends AbstractTestNGSpringContextTests {
         testServiceTwo.testOutPut();
     }
 
+    /**
+     *  一般判断新增方法成功不是根据影响行数来判断，因为新增一旦不成功会直接报错，不会返回0影响行数
+     */
     @Test
     public void testAdd(){
         Demo demo = new Demo();
@@ -49,6 +55,9 @@ public class TestNew extends AbstractTestNGSpringContextTests {
         System.out.println("受影响的行数：" + i);
     }
 
+    /**
+     *  一般判断修改和删除方法是否成功需要根据返回的影响行数是否是0来判断，不会报错
+     */
     @Test
     public void testUpdateAndDelete(){
         Demo demo = new Demo();
@@ -57,7 +66,7 @@ public class TestNew extends AbstractTestNGSpringContextTests {
         int i = demoMapper.updateById(demo);
         System.out.println("修改---受影响的行数：" + i);
         int num = demoMapper.deleteDemo(100);
-        System.out.println("删除---受影响的行数：" + i);
+        System.out.println("删除---受影响的行数：" + num);
     }
 
 

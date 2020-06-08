@@ -106,9 +106,10 @@ public class TestHttp {
         //请求挑战者列表
         StringBuilder builder = new StringBuilder();
         builder.append(qaPreUrl).append("homework/student/challengers?").append("recordId=").append(4);
+
         ParameterizedTypeReference<Result<ResultList<Challenger>>> reference =
-                new ParameterizedTypeReference<Result<ResultList<Challenger>>>() {
-                };
+                new ParameterizedTypeReference<Result<ResultList<Challenger>>>() {};
+
         ResponseEntity<Result<ResultList<Challenger>>> entity =
                 restTemplate.exchange(builder.toString(), HttpMethod.GET, null, reference);
         System.out.println(entity);
@@ -133,6 +134,7 @@ public class TestHttp {
         map.put("pkScore", pkScore);
         HttpEntity<Map<String, Object>> httpEntity = new HttpEntity<>(map);
         Result result = restTemplate.postForObject(url, httpEntity, Result.class);
+
         System.out.println(result);
 //        if(!result.isSuccess()){
 //            System.out.println("错误信息"+result.getError().getMessage());
@@ -164,6 +166,7 @@ public class TestHttp {
         map.put("pkScore", param.getPkScore());
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
+
         HttpEntity<Map<String, Object>> httpEntity = new HttpEntity<>(map, headers);
 
         ResponseEntity<Result> entity = restTemplate.postForEntity(url, httpEntity, Result.class);

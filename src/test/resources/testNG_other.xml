@@ -2,29 +2,60 @@
 
 <suite name="otherSuite">
     <!--  test标签中的属性preserve-order是用来保证在classes中的所有class按照顺序执行（默认就是true） -->
-    <test name="otherTest" preserve-order="true">
-        <groups>
-            <run>
-                <include name="order"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="com.example.zzh.test.TestOther">
+<!--    <test name="otherTest" preserve-order="true">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="order"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--        <classes>-->
+<!--            <class name="com.example.zzh.test.TestOther">-->
+<!--&lt;!&ndash;                <methods>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="testOrderC"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="testOrderB"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="testOrderA"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="testOrderD"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                </methods>&ndash;&gt;-->
 <!--                <methods>-->
-<!--                    <include name="testOrderC"/>-->
-<!--                    <include name="testOrderB"/>-->
-<!--                    <include name="testOrderA"/>-->
-<!--                    <include name="testOrderD"/>-->
+<!--&lt;!&ndash;                    <include name="testParallel"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <include name="testParallelDatabase"/>&ndash;&gt;-->
+<!--                    <parameter name="id" value="78"/>-->
+<!--&lt;!&ndash;                    <include name="testUpdateParallel"/>&ndash;&gt;-->
+<!--                    <include name="testRealParallel"/>-->
 <!--                </methods>-->
-                <methods>
-<!--                    <include name="testParallel"/>-->
-<!--                    <include name="testParallelDatabase"/>-->
-                    <parameter name="id" value="78"/>
-<!--                    <include name="testUpdateParallel"/>-->
-                    <include name="testRealParallel"/>
-                </methods>
-            </class>
+<!--            </class>-->
 
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="newTest">-->
+<!--&lt;!&ndash;        <groups>&ndash;&gt;-->
+<!--&lt;!&ndash;            <run>&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;                <include name="page"/>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                <include name="excel"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            </run>&ndash;&gt;-->
+<!--&lt;!&ndash;        </groups>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="com.example.zzh.test.TestOther">-->
+<!--                <methods>-->
+<!--                    <include name="aaa"/>-->
+<!--                    <include name="bbb"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="T1">
+        <classes>
+            <class name="com.example.zzh.test.optimized.A"/>
+        </classes>
+    </test>
+    <test name="T2">
+        <classes>
+            <class name="com.example.zzh.test.optimized.B"/>
+        </classes>
+    </test>
+    <test name="T3">
+        <classes>
+            <class name="com.example.zzh.test.optimized.C"/>
         </classes>
     </test>
 </suite>

@@ -114,14 +114,14 @@ public class TestGroup extends AbstractTestNGSpringContextTests {
         System.out.println("TestGroup----测试group依赖");
     }
 
-    @Test(groups = {"dependB"})
+    @Test(groups = {"dependA"})
     public void test1(){
         System.out.println("TestGroup----运行depend方法");
     }
 
-    @Test(groups = {"dependA"})
+    @Test(groups = {"dependB"})
     public void groupMethodDepend(){
-        System.out.println("TestDepend----运行groupMethodDepend方法");
+        System.out.println("TestGroup----运行groupMethodDepend方法");
 //        int a = 1/0;
     }
 

@@ -77,15 +77,6 @@ public class TestDemo extends AbstractTestNGSpringContextTests {
         Assert.assertNotNull(demo);
     }
 
-    @Parameters({"id"})
-    @Test
-    public void testUpdate(Integer id){
-        Demo demo = demoService.one(id);
-        demo.setDemoStatus(null);
-        demo.setName(null);
-        demoService.update(demo);
-    }
-
 
     @AfterSuite
     public void afterSuite() {
@@ -102,10 +93,8 @@ public class TestDemo extends AbstractTestNGSpringContextTests {
         System.out.println("TestDemo----运行afterMethod方法");
     }
 
-    @BeforeGroups(groups = {"a"})
-    public void aaa(){
 
-    }
+
 
 
 }

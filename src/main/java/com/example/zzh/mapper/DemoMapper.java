@@ -42,4 +42,6 @@ public interface DemoMapper {
 
     int updateById(@Param("demo") Demo demo);
 
+    List<Demo> getDemos();
+
 }

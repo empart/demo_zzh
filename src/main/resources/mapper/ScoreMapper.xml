@@ -29,6 +29,8 @@
 
     <update id="minus">
         update score set score = score - 10 where id = #{id} and score &gt;=10
+
+        update score set score = 90 where 90 not in ()
     </update>
 
 
@@ -42,5 +44,9 @@
                 and score &gt; #{minScore}
             </if>
         </where>
+    </select>
+
+    <select id="getScores" resultType="com.example.zzh.model.Score">
+        select id,demo_id,score from score
     </select>
 </mapper>

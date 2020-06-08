@@ -1,11 +1,9 @@
 package com.example.zzh.test;
 
 import com.example.zzh.ZzhApplication;
-import com.example.zzh.model.Demo;
 import com.example.zzh.model.Score;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
 
 /**
  * @Author: zhao zhihong
@@ -14,14 +12,14 @@ import org.testng.annotations.Test;
 @SpringBootTest(classes = ZzhApplication.class)
 public class TestBase {
 
+    /**
+     *  提供给其他类使用的DataProvider，必须是静态的
+     */
     @DataProvider(name = "base")
-    public static Object[][] provider(){
-//        Score score = new Score();
-//        score.setScore(11);
-//        score.setDemoId(11111);
+    public static Object[][] provider() {
         return new Object[][]{
-                {new Score(4,50)},
-                {new Score(8,55)}
+                {new Score(4, 50)},
+                {new Score(8, 55)}
         };
     }
 

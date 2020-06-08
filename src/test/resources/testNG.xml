@@ -1,6 +1,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
 <suite name="demoSuite">
+<!--    <parameter name="hello" value="world"/>-->
     <!-- 案例一（只包含demoTest） ，测试的具体结果见TestDemo -->
     <!-- 案例二（包含demoTest和demoTest2） ，测试的具体结果见TestDemo -->
 
@@ -17,16 +18,33 @@
 <!--&lt;!&ndash;            </class>&ndash;&gt;-->
 <!--        </classes>-->
 <!--    </test>-->
-    <test name="demoTest2">
-        <classes>
-            <class name="com.example.zzh.test.TestDemo">
-                <methods>
-                    <parameter name="id" value="1"/>
-                    <include name="testUpdate"/>
-                </methods>
-            </class>
+<!--    <test name="demoTest2">-->
+<!--        <classes>-->
+<!--            <class name="com.example.zzh.test.TestDemo">-->
+<!--                <methods>-->
+<!--                    <parameter name="id" value="1"/>-->
+<!--                    <include name="testUpdate"/>-->
+<!--                </methods>-->
+<!--            </class>-->
 
-<!--            <class name="com.example.zzh.test.TestScore"/>-->
+<!--&lt;!&ndash;            <class name="com.example.zzh.test.TestScore"/>&ndash;&gt;-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test name="testCommon">-->
+<!--        <classes>-->
+<!--            <class name="com.example.zzh.test.TestCommon"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    <test name="test">
+        <groups>
+            <run>
+                <include name="test"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.zzh.test.optimized.A"/>
+            <class name="com.example.zzh.test.optimized.B"/>
+            <class name="com.example.zzh.test.optimized.C"/>
         </classes>
     </test>
 </suite>

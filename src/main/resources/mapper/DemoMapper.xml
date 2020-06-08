@@ -76,5 +76,9 @@
         update demo set name=#{demo.name},nick_name=#{demo.nickName},demo_status=#{demo.demoStatus},demo_type=#{demo.demoType} where id = #{demo.id}
     </update>
 
+    <select id="getDemos" resultType="com.example.zzh.model.Demo">
+        select id,name,nick_name,demo_status,demo_type,is_deleted from demo
+    </select>
+
 
 </mapper>

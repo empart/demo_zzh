@@ -29,4 +29,6 @@ public interface ScoreMapper {
     int minus(@Param("id") Integer id);
 
     List<Score> getList(@Param("demoId") Integer demoId, @Param("minScore") Integer minScore);
+
+    List<Score> getScores();
 }

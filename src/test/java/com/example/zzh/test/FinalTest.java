@@ -43,6 +43,7 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
     private Product initProduct;
 
 
+
     @Autowired
     private ProductMapper productMapper;
     @Autowired
@@ -68,7 +69,7 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
     public Object[][] product() {
         Product productParam = new Product();
         //商品信息
-        productParam.setProductName("testNG测试商品122222");
+        productParam.setProductName("testNG测试商品" + System.currentTimeMillis());
         productParam.setProductStatus(1);
         productParam.setImageCover("封面图url");
         productParam.setImageContent("内容url");
@@ -103,7 +104,7 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
             }
             productParam.setClassIdList(classIds);
         }
-        //把商品信息赋值给product属性成为全局变量(编辑时还有用)
+        //把商品信息赋值给product属性成为全局变量(查询时还有用)
         initProduct = productParam;
 
         return new Object[][]{
@@ -152,7 +153,6 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
     /**
      * 新增商品
      *
-     *
      * @param product
      */
     @Test(dataProvider = "product")
@@ -167,10 +167,10 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
     /**
      * 查询商品
      */
-    @Test(dataProvider = "product", dependsOnMethods = {"addProduct"})
-    public void getProduct(Product product) {
+    @Test(dependsOnMethods = {"addProduct"})
+    public void getProduct() {
         //获取新增方法新增的商品ID
-        String productName = product.getProductName();
+        String productName = initProduct.getProductName();
         Integer productId = productMapper.getProduct(productName);
 
         String url = qaPreUrl + "management/product/" + productId;
@@ -184,11 +184,9 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
         //断言接口请求成功
         Assert.assertTrue(result.isSuccess());
         Product productData = result.getData();
-        //赋值给initProduct,方便后续编辑使用
-        initProduct = productData;
 
         List<Clazz> classList = productData.getClassList();
-        List<Integer> classIdList = product.getClassIdList();
+        List<Integer> classIdList = initProduct.getClassIdList();
         //断言商品详情中的class信息和新增时的一致
         Assert.assertTrue(classIdList.size() == classList.size());
         List<Integer> tempClassIds = new ArrayList<>();
@@ -197,7 +195,7 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
         }
         Assert.assertTrue(classIdList.containsAll(tempClassIds));
         //断言商品详情中的sku信息与新增时一致
-        List<Sku> productSKUList = product.getProductSKUList();
+        List<Sku> productSKUList = initProduct.getProductSKUList();
         List<Sku> skuList = productData.getProductSKUList();
 
         Assert.assertTrue(productSKUList.size() == skuList.size());
@@ -205,6 +203,9 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
         for (Sku sku : skuList) {
             Assert.assertTrue(sku.getGiftIdList().equals(productSKUList.get(0).getGiftIdList()));
         }
+
+        //赋值给initProduct,方便后续编辑使用
+        initProduct = productData;
     }
 
     private Integer classId;
@@ -235,7 +236,7 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
     }
 
     /**
-     * 编辑商品
+     * 校验商品
      */
     @Test(dependsOnMethods = "editProduct")
     public void checkProduct() {
@@ -262,9 +263,9 @@ public class FinalTest extends AbstractTestNGSpringContextTests {
 
     /**
      * 编辑后要验证相关的表的删除逻辑
-     *      删除sku：①要同时删除渠道配置的sku
-     *              ②要同时删除sku关联的套餐
-     *              ③要同时删除代理配置的该sku的套餐
+     * 删除sku：①要同时删除渠道配置的sku
+     * ②要同时删除sku关联的套餐
+     * ③要同时删除代理配置的该sku的套餐
      */
     @Test(dependsOnMethods = {"checkProduct"})
     public void checkOther() {

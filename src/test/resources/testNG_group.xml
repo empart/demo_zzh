@@ -15,7 +15,7 @@
                 <include name="test"/>
                 <exclude name="demo"/>
                 <exclude name="all"/>
-                <exclude name="score"/>
+<!--                <exclude name="score"/>-->
                 <exclude name="one"/>
             </run>
         </groups>

@@ -1,10 +1,18 @@
 package com.example.zzh.test;
 
+import com.alibaba.excel.EasyExcel;
+import com.alibaba.excel.util.DateUtils;
 import com.example.zzh.ZzhApplication;
+import com.example.zzh.excel.Employee;
+import com.example.zzh.excel.ExcelListener;
+import com.example.zzh.excel.ExcelModel;
+import com.example.zzh.mapper.DemoMapper;
+import com.example.zzh.mapper.ScoreMapper;
 import com.example.zzh.model.Demo;
 import com.example.zzh.model.Score;
 import com.example.zzh.service.DemoService;
 import com.example.zzh.service.ScoreService;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
@@ -12,7 +20,12 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -26,6 +39,12 @@ public class TestOther extends AbstractTestNGSpringContextTests {
     private ScoreService scoreService;
     @Autowired
     private DemoService demoService;
+
+    @Autowired
+    private DemoMapper demoMapper;
+
+    @Autowired
+    private ScoreMapper scoreMapper;
 
     /**
      * 测试异常：如果方法没有抛出expectedExceptions中的任何一种异常，方法算作执行失败。
@@ -119,6 +138,113 @@ public class TestOther extends AbstractTestNGSpringContextTests {
     public void testRealParallel(Integer id) throws Exception {
         int minus = scoreService.realMinus(id);
         Assert.assertEquals(minus, 1);
+    }
+
+
+    @Test(groups = {"page"})
+    public void testPage1(){
+        PageHelper.startPage(2,10);
+        List<Demo> demos = demoMapper.getDemos();
+        System.out.println(demos);
+        System.out.println(demos.size());
+
+        PageHelper.offsetPage(10,10);
+        List<Demo> demos2 = demoMapper.getDemos();
+        System.out.println(demos2);
+        System.out.println(demos2.size());
+    }
+
+    @Test(groups = {"page"})
+    public void testPage2(){
+        //一行PageHelper语句只对第一条查询语句生效
+        PageHelper.startPage(1,7);
+        List<Demo> demos = demoMapper.getDemos();
+        System.out.println(demos);
+        System.out.println(demos.size());
+
+        List<Score> scores = scoreMapper.getScores();
+        System.out.println(scores);
+        System.out.println(scores.size());
+    }
+
+    private List<ExcelModel> data;
+
+    @Test(groups = {"excel"})
+    public void testReadExcel(){
+
+        String fileName = "/Users/zhaozhihong/Desktop/test.xlsx";
+
+        //listener是excel的监听解析器
+        ExcelListener<ExcelModel> listener = new ExcelListener<>();
+        //sheet()可以指定解析哪一个sheet，不指定默认第一个
+        EasyExcel.read(fileName, ExcelModel.class, listener).sheet().doRead();
+
+        List<ExcelModel> data = listener.getData();
+        for (ExcelModel datum : data) {
+            System.out.println(datum);
+        }
+        this.data = data;
+    }
+
+    @Test(groups = {"excel"})
+    public void testWriteExcel() throws IOException {
+        String fileName = "/Users/zhaozhihong/Desktop/write.xlsx";
+        File file = new File(fileName);
+        if(!file.exists()){
+            file.createNewFile();
+        }
+
+        EasyExcel.write(file,ExcelModel.class).sheet().doWrite(data);
+
+    }
+
+    @Test(groups = {"excel"})
+    public void testRead(){
+
+        String fileName = "/Users/zhaozhihong/Desktop/导入员工模板0525.xlsx";
+
+        ExcelListener<Employee> listener = new ExcelListener<>();
+//        EasyExcel.read(fileName, Employee.class, listener).sheet().doRead();
+        //headRowNumber可以指定哪一行开始读，默认是从第二行开始读，因为第一行是标题
+        // 下面指定从第三行开始读（此时默认第二行才是标题），适合标题上面有些行被占用的场景
+        EasyExcel.read(fileName, Employee.class, listener).sheet().headRowNumber(2).doRead();
+
+        List<Employee> data = listener.getData();
+        for (Employee datum : data) {
+            System.out.println(datum);
+        }
+    }
+
+    @Test
+    public void testDate(){
+        //date转string
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        String dateStr = format.format(date);
+        System.out.println(dateStr);
+
+        //string转date
+        String s = "2020年1月1日";
+        format = new SimpleDateFormat("yyyy年MM月dd日");
+        try {
+            Date parse = format.parse(s);
+            System.out.println(parse);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+    @Test
+    public void aaa(){
+        int a  =1/0;
+        System.out.println(1);
+    }
+
+    @Test(dependsOnMethods = {"aaa"},alwaysRun = true)
+    public void bbb(){
+        System.out.println(2);
     }
 
 }

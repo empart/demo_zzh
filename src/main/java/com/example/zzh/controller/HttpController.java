@@ -37,6 +37,7 @@ public class HttpController {
 
 
     /**
+     *      下面这种接收方式PathVariable是直接从请求路径中的{id}取到值然后放入到Integer id中
      *  /demo/one/path/10/lss
      * @param id
      * @return

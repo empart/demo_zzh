@@ -9,9 +9,14 @@ import lombok.Data;
 @Data
 public class Result<T> {
 
+
     private boolean success;
 
     private Error error;
+
+    /**
+     * Result<ResultList<Challenger>>
+     */
 
     private T data;
 
